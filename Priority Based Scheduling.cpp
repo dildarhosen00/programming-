@@ -1,8 +1,8 @@
 class Process
 {
-    int pid; // Process ID
-    int bt; // CPU Burst time required
-    int priority; // Priority of this process
+    int pid;
+    int bt;
+    int priority;
     Process(int pid, int bt, int priority)
     {
         this.pid = pid;

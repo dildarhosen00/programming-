@@ -1,14 +1,12 @@
 #include<iostream>
 using namespace std;
 int mat[10][6];
- 
 void swap(int *a, int *b)
 {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
- 
 void arrangeArrival(int num, int mat[][6])
 {
     for(int i=0; i<num; i++)
@@ -25,7 +23,6 @@ void arrangeArrival(int num, int mat[][6])
         }
     }
 }
- 
 void completionTime(int num, int mat[][6])
 {
     int temp, val;
@@ -73,14 +70,12 @@ int main()
         cout<<"Enter Burst Time: ";
         cin>>mat[i][2];
     }
-     
     cout<<"Before Arrange...\n";
     cout<<"Process ID\tArrival Time\tBurst Time\n";
     for(int i=0; i<num; i++)
     {
         cout<<mat[i][0]<<"\t\t"<<mat[i][1]<<"\t\t"<<mat[i][2]<<"\n";
     }
-     
     arrangeArrival(num, mat);
     completionTime(num, mat);
     cout<<"Final Result...\n";
